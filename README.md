@@ -45,12 +45,46 @@ and slides as needed.
 Divulge has these reveal.js plugins already included:
 
 - external: https://github.com/janschoepke/reveal_external
+- menu: https://github.com/denehyg/reveal.js-menu
+
+### Deactivating some plugins
+
+If you do not want some pre-enabled plugins, then simply remove them
+from the [slides/index.html](slides/index.html) plugins list or comment
+the line.
+
+Example: plugin list in [slides/index.html](slides/index.html)
+
+```javascript
+        plugins: [ 
+          RevealMarkdown, 
+          RevealHighlight, 
+          RevealNotes, 
+          RevealMath, 
+          RevealZoom, 
+          RevealMenu 
+        ]
+```
+
+Deactivate menu plugin:
+
+```javascript
+        plugins: [ 
+          RevealMarkdown, 
+          RevealHighlight, 
+          RevealNotes, 
+          RevealMath, 
+          RevealZoom, 
+          // RevealMenu 
+        ]
+```
 
 ## Thanks
 
 - Very much thanks to the creator of [reveal.js](https://revealjs.com/)! What 
   a nice piece of software!
 - Plugin external: https://github.com/janschoepke/reveal_external.
+- Plugin menu: https://github.com/denehyg/reveal.js-menu
 
 ---  
 

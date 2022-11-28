@@ -5,6 +5,7 @@ const port = 3000
 app.use('/reveal.js', express.static('node_modules/reveal.js/dist'))
 app.use('/reveal.js-plugin', express.static('node_modules/reveal.js/plugin'))
 app.use('/reveal.js-plugin-external', express.static('node_modules/reveal_external'))
+app.use('/reveal.js-plugin-menu', express.static('node_modules/reveal.js-menu'))
 
 app.use('/', express.static('slides'))
 app.listen(port, () => {
