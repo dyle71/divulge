@@ -10,7 +10,7 @@ call it "bloat" ... out of the way. Focus on the essentials! The slides!
 1. Clone as usual.
 2. Install a node of your choice.
    I recommend using a latest release via nvm - Node Version Manager.
-   > There is a very nice manual by [Microsoft ](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows)
+   > There is a very nice manual by [Microsoft](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows)
 3. `cd` into the project.
 4. Install necessary packages:
 
@@ -32,6 +32,13 @@ npm run show
 All slides reside in the `slides` folder. The main grouping "slide" is
 [content.html](slides/content.html). Start editing this one check the 
 slides subfolder for examples and references.
+
+Start with [content.html](slides/content.html) and arrange you sections 
+and slides as needed.
+
+> However, refrain to edit the [slides/index.html](slides/index.html), since 
+> this contains all the boilerplate stuff to configure reveal.js along with
+> all plugins. Everything else is on your disposal.
 
 ## Plugins installed
 
