@@ -12,4 +12,40 @@
     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
     est laborum.
   </section>
+
+  <section>
+    <pre><code class="language-python" data-trim data-line-numbers="1-6|7-13|14-31">
+      @click.command(context_settings={'help_option_names': ['-h', '--help']})
+      @click.option('--list-only', '-l', is_flag=True, help='Only list current found base sounds.')
+      @click.option('--distribute', '-d', is_flag=True, help='Distribute frequencies.')
+      @click.option('--sound', '-s', type=str, default=DEFAULT_SOUND, show_default=True,
+                    help='Default base sound to load.')
+      @click.option('--version', '-v', is_flag=True, help='Show version and exit.')
+      def main(list_only=False, distribute=False, sound='', version=False) -> None:
+          """Keyquack - annoy your colleagues while you type.
+      
+          Launch program, turn on your loudspeakers while in an open space,
+          start typing and annoy everyone.
+          """
+      
+          if version:
+              show_version()
+              sys.exit(0)
+      
+          base_sounds = load_base_sounds()
+          if list_only:
+              print('Available sounds:')
+              for sound_name in base_sounds:
+                  print(sound_name)
+              sys.exit(0)
+      
+          if sound not in base_sounds:
+              sys.stderr.write(f"Cannot find sound '{sound}' in base sounds.\n")
+              sys.stderr.write('List available sounds with --list-only option.\n')
+              sys.stderr.write('Please specify alternative with --sound option.\n')
+              sys.exit(1)
+      
+          run(sound=sound, sound_db=base_sounds, distribute=distribute)
+    </code></pre>
+  </section>
 </section>
