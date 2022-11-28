@@ -12,9 +12,20 @@ call it "bloat" ... out of the way. Focus on the essentials! The slides!
    I recommend using a latest release via nvm - Node Version Manager.
    > There is a very nice manual by [Microsoft ](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows)
 3. `cd` into the project.
-4. `npm run show`.
-5. Open up a browser and load http://localhost:3000.
-6. Edit your set of slides at [slides](slides/).
+4. Install necessary packages:
+
+```bash
+npm install
+```
+
+5. Fire up the presentation with: 
+   
+```bash
+npm run show
+```
+
+6. Open up a browser and load http://localhost:3000.
+7. Edit your set of slides at [slides](slides/). =)
 
 ## Slides
 
