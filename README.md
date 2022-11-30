@@ -47,6 +47,7 @@ Divulge has these reveal.js plugins already included:
 - external: https://github.com/janschoepke/reveal_external
 - menu: https://github.com/denehyg/reveal.js-menu
 - pdfexport: https://github.com/McShelby/reveal-pdfexport/blob/master/pdfexport.js
+- plantUML: https://github.com/reveal-plantuml/reveal-plantuml.github.io
 
 ### Deactivating some plugins
 
@@ -87,6 +88,7 @@ Deactivate menu plugin:
 - Plugin external: https://github.com/janschoepke/reveal_external.
 - Plugin menu: https://github.com/denehyg/reveal.js-menu
 - Plugin pdfexport: https://github.com/McShelby/reveal-pdfexport/blob/master/pdfexport.js
+- Plugin plantUML: https://github.com/reveal-plantuml/reveal-plantuml.github.io
 
 ---  
 
