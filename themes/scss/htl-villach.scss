@@ -1,0 +1,45 @@
+/**
+ * HTL-Villach theme for reveal.js.
+ */
+
+
+@import "../../node_modules/reveal.js/css/theme/template/mixins";
+@import "../../node_modules/reveal.js/css/theme/template/settings";
+
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+}
+
+@include light-bg-text-color(#222);
+
+@import "../../node_modules/reveal.js/css/theme/template/theme";
+
+/* We use a reduced font for the headers. */
+.reveal h1 {
+	font-size: 1em;
+}
+
+.reveal h2 {
+	font-size: 0.9em;
+}
+
+.reveal h3 {
+	font-size: 0.8em;
+}
+
+.reveal h4 {
+	font-size: 0.7em;
+}
+
+.reveal h5 {
+	font-size: 0.6em;
+}
+
+.reveal h6  {
+	font-size: 0.5em;
+}
+
+.hljs {
+	font-size: 16px;
+	line-height: 1.1;
+}
