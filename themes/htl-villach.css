@@ -361,29 +361,37 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /* We use a reduced font for the headers. */
 .reveal h1 {
   font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .reveal h2 {
   font-size: 0.9em;
+  margin-bottom: 1em;
 }
 
 .reveal h3 {
   font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
 .reveal h4 {
   font-size: 0.7em;
+  margin-bottom: 1em;
 }
 
 .reveal h5 {
   font-size: 0.6em;
+  margin-bottom: 1em;
 }
 
 .reveal h6 {
   font-size: 0.5em;
+  margin-bottom: 1em;
 }
 
 .hljs {
   font-size: 16px;
   line-height: 1.1;
 }
+
+/*# sourceMappingURL=htl-villach.css.map */
