@@ -5,6 +5,15 @@ A very minimal template for creating reveal.js slides quickly.
 This is a `npm install` based version of reveal.js with lots of ... some might
 call it "bloat" ... out of the way. Focus on the essentials! The slides!
 
+```bash
+$ mkdir -p presentation/slides
+$ docker-compose --file /PATH/TO/DIVULGE up -d
+$ sudo chown -R $USER presentation/slides
+```
+
+Done. Presentation is at http://localhost:3000 and your slides are for
+your disposal at `presentation/slides`.
+
 ## Install
 
 1. Clone as usual.
@@ -31,14 +40,14 @@ npm run show
 
 All slides reside in the `slides` folder. The main grouping "slide" is
 [content.html](slides/content.html). Start editing this one check the 
-slides subfolder for examples and references.
+[slides](./slides) subfolder for examples and references.
 
-Start with [content.html](slides/content.html) and arrange you sections 
+The [content.html](slides/content.html) starts and arranges your sections 
 and slides as needed.
 
 > However, refrain to edit the [slides/index.html](slides/index.html), since 
 > this contains all the boilerplate stuff to configure reveal.js along with
-> all plugins. Everything else is on your disposal.
+> all plugins. Modify this if you want to configure reveal.js in more detail.
 
 ## Plugins installed
 
@@ -86,6 +95,27 @@ Deactivate menu plugin:
 The accompanying [Dockerfile](./Dockerfile) defines a docker container with 
 the volumes `/divulge/slides` (holding the slides) and `/divulge/themes` 
 holding the styling of the slides.
+
+## Docker-Compose
+
+Included is also a [docker-compose.yml](./docker-compose.yml). For the most
+easiest way to use divulge, install docker-compose.
+
+```bash
+$ mkdir my-presentation/slides
+$ cd my-presentation
+$ docker-compose --file /PATH/TO/COMPOSE/FILE up
+...
+```
+
+This will create a mere empty template in the slides subfolder and will
+start serving your presentation at http://localhost:3000.
+
+> Beware: if divulge does not find any slides, it will populate the
+> slides folder with some initial ones. However, these new files will
+> belong to root. This is due to the nature of docker any might change
+> in the future. In the meantime simply do a `sudo chown -R $USER slides`
+> for remedy.
 
 ## Thanks
 
