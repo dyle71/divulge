@@ -5,14 +5,27 @@ A very minimal template for creating reveal.js slides quickly.
 This is a `npm install` based version of reveal.js with lots of ... some might
 call it "bloat" ... out of the way. Focus on the essentials! The slides!
 
+## Quick!
+
+For the impatient ones:
+
+1. Install `docker-compose` if you do not have already.
+2. Download the [docker-compose.yml](./docker-compose.yml).
+3. Run these commands:
+
 ```bash
-$ mkdir -p presentation/slides
-$ docker-compose --file /PATH/TO/DIVULGE up -d
-$ sudo chown -R $USER presentation/slides
+mkdir -p presentation/slides
+docker-compose --file /PATH/TO/DIVULGE-DOCKER-COMPOSE up -d
+sudo chown -R $USER presentation/slides
 ```
 
 Done. Presentation is at http://localhost:3000 and your slides are for
-your disposal at `presentation/slides`.
+your disposal at `presentation/slides`. Check the [./slides](./slides/) folder 
+for some examples.
+
+Press "?" in the presentation to get the keyboard shortcuts.
+
+**No need to clone this repo.**
 
 ## Install
 
