@@ -394,4 +394,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
   line-height: 1.1;
 }
 
+code {
+  color: gray;
+  font-size: 90%;
+}
+
 /*# sourceMappingURL=theme.css.map */

@@ -1,3 +1,10 @@
+/*
+ * This file is part of the divulge Source Code.
+ * See the LICENSE file in the project root folder.
+ * web: https://gitlab.com/dyle71/divulge
+ * (C) Copyright 2022, oliver.maurhart@headcode.space
+ */
+
 const express = require('express')
 const app = express()
 const port = 3000
