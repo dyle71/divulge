@@ -81,6 +81,12 @@ Deactivate menu plugin:
         ]
 ```
 
+## Docker
+
+The accompanying [Dockerfile](./Dockerfile) defines a docker container with 
+the volumes `/divulge/slides` (holding the slides) and `/divulge/themes` 
+holding the styling of the slides.
+
 ## Thanks
 
 - Very much thanks to the creator of [reveal.js](https://revealjs.com/)! What 

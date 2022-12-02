@@ -19,5 +19,8 @@
     "reveal-plantuml": "^1.0.2",
     "reveal.js": "^4.4.0",
     "reveal.js-menu": "^2.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
   }
 }
