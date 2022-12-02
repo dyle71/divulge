@@ -7,8 +7,21 @@
 @import "../../node_modules/reveal.js/css/theme/template/settings";
 
 @mixin bodyBackground() {
-	@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+	$top: #000000;
+	$mid1: #171731;
+	$mid2: #171731;
+	$bottom: #000000;
+	background: $top;
+	background: -moz-linear-gradient(top, $top 0%, $mid1 10%, $mid2 90%, $bottom 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(10%, $mid1), color-stop(90%, $mid2), color-stop(100%, $bottom));
+	background: -webkit-linear-gradient(top, $top 0%, $mid1 10%, $mid2 90%, $bottom 100%);
+	background: -o-linear-gradient(top, $top 0%, $mid1 10%, $mid2 90%, $bottom 100%);
+	background: -ms-linear-gradient(top, $top 0%, $mid1 10%, $mid2 90%, $bottom 100%);
+	background: linear-gradient(top, $top 0%, $mid1 10%, $mid2 90%, $bottom 100%);
 }
+
+$linkColor: #FFE65D;
+$linkColorHover: #{lighten($linkColor , 20%)};
 
 @include light-bg-text-color(#222);
 
@@ -46,6 +59,6 @@
 }
 
 .hljs {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.1;
 }

@@ -1,53 +1,58 @@
 <section data-transition="zoom">
-  <h1>We also do UML</h1>
-  <p>
-    via <a href="https://plantuml.com/">PlantUML</a>
-  </p>
 
-  <div style="display: flex; flex-direction: row; justify-content: center; gap: 1rem;">
+  <section data-transition="concave">
 
-    <div style="margin-top: auto; margin-bottom: auto;">
-      <pre>
-        <code class="language-plantuml">
-          @startuml
-          Alice -> Bob: Authentication Request
-          Bob --> Alice: Authentication Response
-          Alice -> Bob: Another authentication Request
-          Bob --> Alice: Another authentication Response
-          @enduml
-        </code>
-      </pre>
+    <h1>We also do UML</h1>
+    <p>
+      via <a href="https://plantuml.com/">PlantUML</a>
+    </p>
+  
+    <div style="display: flex; flex-direction: row; justify-content: center; gap: 1rem;">
+  
+      <div style="margin-top: auto; margin-bottom: auto;">
+        <pre>
+          <code class="language-plantuml">
+            @startuml
+            Alice -> Bob: Authentication Request
+            Bob --> Alice: Authentication Response
+            Alice -> Bob: Another authentication Request
+            Bob --> Alice: Another authentication Response
+            @enduml
+          </code>
+        </pre>
+      </div>
+  
+      <div style="margin-top: auto; margin-bottom: auto;">
+        <pre>
+          <code class="language-plantuml">
+            @startuml
+            abstract class Person {
+                #Id: string
+                #name: string
+                #age: int
+            }
+            class Employee {
+                +Department: Department
+                +Salary: Decimal
+            }
+            class Professor {
+                +Expertise: String
+            }
+            class Student {
+                +Grade: int
+                +GradeLetter: Char
+                +GraduationYear: Year
+                +void UpdateGrade()
+            }
+            Person <|-- Employee
+            Employee <|-- Professor
+            Person <|-- Student
+            @enduml
+          </code>
+        </pre>
+      </div>
+  
     </div>
+  </section>
 
-    <div style="margin-top: auto; margin-bottom: auto;">
-      <pre>
-        <code class="language-plantuml">
-          @startuml
-          abstract class Person {
-              #Id: string
-              #name: string
-              #age: int
-          }
-          class Employee {
-              +Department: Department
-              +Salary: Decimal
-          }
-          class Professor {
-              +Expertise: String
-          }
-          class Student {
-              +Grade: int
-              +GradeLetter: Char
-              +GraduationYear: Year
-              +void UpdateGrade()
-          }
-          Person <|-- Employee
-          Employee <|-- Professor
-          Person <|-- Student
-          @enduml
-        </code>
-      </pre>
-    </div>
-
-  </div>
 </section>

@@ -28,21 +28,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.55em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #13DAEC;
-  --r-link-color-dark: #0d99a5;
-  --r-link-color-hover: #71e9f4;
+  --r-link-color: #FFE65D;
+  --r-link-color-dark: #ffda11;
+  --r-link-color-hover: #fff6c3;
   --r-selection-background-color: #FF5E99;
   --r-selection-color: #fff;
 }
 
 .reveal-viewport {
-  background: rgb(28, 30, 32);
-  background: -moz-radial-gradient(center, circle cover, rgb(85, 90, 95) 0%, rgb(28, 30, 32) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgb(85, 90, 95)), color-stop(100%, rgb(28, 30, 32)));
-  background: -webkit-radial-gradient(center, circle cover, rgb(85, 90, 95) 0%, rgb(28, 30, 32) 100%);
-  background: -o-radial-gradient(center, circle cover, rgb(85, 90, 95) 0%, rgb(28, 30, 32) 100%);
-  background: -ms-radial-gradient(center, circle cover, rgb(85, 90, 95) 0%, rgb(28, 30, 32) 100%);
-  background: radial-gradient(center, circle cover, rgb(85, 90, 95) 0%, rgb(28, 30, 32) 100%);
+  background: #000000;
+  background: -moz-linear-gradient(top, #000000 0%, #171731 10%, #171731 90%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(10%, #171731), color-stop(90%, #171731), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #000000 0%, #171731 10%, #171731 90%, #000000 100%);
+  background: -o-linear-gradient(top, #000000 0%, #171731 10%, #171731 90%, #000000 100%);
+  background: -ms-linear-gradient(top, #000000 0%, #171731 10%, #171731 90%, #000000 100%);
+  background: linear-gradient(top, #000000 0%, #171731 10%, #171731 90%, #000000 100%);
   background-color: var(--r-background-color);
 }
 
@@ -390,7 +390,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .hljs {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1;
 }
 
