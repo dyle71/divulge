@@ -1,0 +1,9 @@
+services:
+
+  divulge:
+    image: dyle71/divulge:latest
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - ./my-slides:/divulge/slides
