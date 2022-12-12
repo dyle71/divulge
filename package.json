@@ -6,6 +6,8 @@
   "scripts": {
     "show": "node index.js",
     "sass": "sass themes/scss/theme.scss themes/theme.css",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prettier": "prettier .",
     "prettier:fix": "prettier --write ."
   },
