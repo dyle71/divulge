@@ -1,19 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <title>Divulge - minimalistic reveal.js template</title>
 
-    <link rel="stylesheet" href="reveal.js/reset.css">
-    <link rel="stylesheet" href="reveal.js/reveal.css">
-    <link rel="stylesheet" href="reveal.js-plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="reveal.js/reset.css" />
+    <link rel="stylesheet" href="reveal.js/reveal.css" />
+    <link rel="stylesheet" href="reveal.js-plugin/highlight/monokai.css" />
 
-    <link rel="stylesheet" href="themes/theme.css">
+    <link rel="stylesheet" href="themes/theme.css" />
   </head>
   <body>
-
     <div class="reveal">
       <div class="slides">
         <section data-external-replace="content.html"></section>
@@ -33,22 +35,24 @@
         hash: true,
         dependencies: [
           {
-            src: 'reveal.js-plugin-external/external/external.js', 
-            condition: function() { 
-                return !!document.querySelector( '[data-external],[data-external-replace]' ); 
+            src: "reveal.js-plugin-external/external/external.js",
+            condition: function () {
+              return !!document.querySelector(
+                "[data-external],[data-external-replace]"
+              );
             },
           },
-          { src: '//cdn.jsdelivr.net/npm/reveal-plantuml' },
+          { src: "//cdn.jsdelivr.net/npm/reveal-plantuml" },
         ],
-        plugins: [ 
-          RevealMarkdown, 
-          RevealHighlight, 
-          RevealNotes, 
-          RevealMath, 
-          RevealZoom, 
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMath,
+          RevealZoom,
           RevealMenu,
-          PdfExport, 
-        ]
+          PdfExport,
+        ],
       });
     </script>
   </body>

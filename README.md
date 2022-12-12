@@ -18,8 +18,8 @@ call it "bloat" ... out of the way. Focus on the essentials! The slides!
 npm install
 ```
 
-5. Fire up the presentation with: 
-   
+5. Fire up the presentation with:
+
 ```bash
 npm run show
 ```
@@ -34,13 +34,13 @@ npm run show
 ## Slides
 
 All slides reside in the `slides` folder. The main grouping "slide" is
-[content.html](slides/content.html). Start editing this one check the 
+[content.html](slides/content.html). Start editing this one check the
 slides subfolder for examples and references.
 
-Start with [content.html](slides/content.html) and arrange you sections 
+Start with [content.html](slides/content.html) and arrange you sections
 and slides as needed.
 
-> However, refrain to edit the [slides/index.html](slides/index.html), since 
+> However, refrain to edit the [slides/index.html](slides/index.html), since
 > this contains all the boilerplate stuff to configure reveal.js along with
 > all plugins. Everything else is on your disposal.
 
@@ -62,39 +62,39 @@ the line.
 Example: plugin list in [slides/index.html](slides/index.html)
 
 ```javascript
-        plugins: [ 
-          RevealMarkdown, 
-          RevealHighlight, 
-          RevealNotes, 
-          RevealMath, 
-          RevealZoom, 
-          RevealMenu 
-        ]
+plugins: [
+  RevealMarkdown,
+  RevealHighlight,
+  RevealNotes,
+  RevealMath,
+  RevealZoom,
+  RevealMenu,
+];
 ```
 
 Deactivate menu plugin:
 
 ```javascript
-        plugins: [ 
-          RevealMarkdown, 
-          RevealHighlight, 
-          RevealNotes, 
-          RevealMath, 
-          RevealZoom, 
-          // RevealMenu 
-        ]
+plugins: [
+  RevealMarkdown,
+  RevealHighlight,
+  RevealNotes,
+  RevealMath,
+  RevealZoom,
+  // RevealMenu
+];
 ```
 
 ## Thanks
 
-- Very much thanks to the creator of [reveal.js](https://revealjs.com/)! What 
+- Very much thanks to the creator of [reveal.js](https://revealjs.com/)! What
   a nice piece of software!
 - Plugin external: https://github.com/janschoepke/reveal_external.
 - Plugin menu: https://github.com/denehyg/reveal.js-menu
 - Plugin pdfexport: https://github.com/McShelby/reveal-pdfexport/blob/master/pdfexport.js
 - Plugin plantUML: https://github.com/reveal-plantuml/reveal-plantuml.github.io
 
----  
+---
 
 Oliver Maurhart  
 oliver.maurhart@headcode.space  
