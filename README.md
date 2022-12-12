@@ -9,7 +9,7 @@ call it "bloat" ... out of the way. Focus on the essentials! The slides!
 
 1. Clone as usual.
 2. Install a node of your choice.
-   I recommend using a latest release via nvm - Node Version Manager.
+   I recommend using the latest release via nvm - Node Version Manager.
    > There is a very nice manual by [Microsoft](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows)
 3. `cd` into the project.
 4. Install necessary packages:
@@ -25,7 +25,7 @@ npm run show
 ```
 
 6. Open up a browser and load http://localhost:3000.
-7. Edit your set of slides at [slides](slides/). =)
+7. Edit your set of slides at [slides](./slides/). =)
 
 ## Slides
 
