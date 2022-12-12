@@ -24,6 +24,10 @@ npm install
 npm run show
 ```
 
+> This starts the presentation at port 3000. You can tweak this by
+> setting the global environment variable PORT to something else.
+> Like `PORT=4000 npm run show`.
+
 6. Open up a browser and load http://localhost:3000.
 7. Edit your set of slides at [slides](./slides/). =)
 
