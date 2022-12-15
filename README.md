@@ -31,6 +31,11 @@ npm run show
 6. Open up a browser and load http://localhost:3000.
 7. Edit your set of slides at [slides](./slides/). =)
 
+## Configuration
+
+All (basic) configuration is found in [slides/config.js](slides/config.js). Adjust values
+as seems fitting.
+
 ## Slides
 
 All slides reside in the `slides` folder. The main grouping "slide" is

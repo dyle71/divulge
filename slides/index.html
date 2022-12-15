@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="reveal.js/reset.css" />
     <link rel="stylesheet" href="reveal.js/reveal.css" />
     <link rel="stylesheet" href="reveal.js-plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../themes/theme.css" />
 
-    <link rel="stylesheet" href="themes/theme.css" />
+    <script src="config.js"></script>
   </head>
   <body>
     <div class="reveal">
@@ -29,10 +30,10 @@
     <script src="reveal.js-plugin/math/math.js"></script>
     <script src="reveal.js-plugin/zoom/zoom.js"></script>
     <script src="reveal.js-plugin-menu/menu.js"></script>
-    <script src="plugin/pdfexport/pdfexport.js"></script>
+    <script src="../plugin/pdfexport/pdfexport.js"></script>
     <script>
       Reveal.initialize({
-        hash: true,
+        ...config,
         dependencies: [
           {
             src: "reveal.js-plugin-external/external/external.js",
