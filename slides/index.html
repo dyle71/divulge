@@ -19,7 +19,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-external-replace="content.html"></section>
+        <section data-import-replace="content.html"></section>
       </div>
     </div>
 
@@ -30,21 +30,12 @@
     <script src="reveal.js-plugin/math/math.js"></script>
     <script src="reveal.js-plugin/zoom/zoom.js"></script>
     <script src="reveal.js-plugin-menu/menu.js"></script>
+    <script src="../plugin/importer/import.js"></script>
     <script src="../plugin/pdfexport/pdfexport.js"></script>
     <script>
       Reveal.initialize({
         ...config,
-        dependencies: [
-          {
-            src: "reveal.js-plugin-external/external/external.js",
-            condition: function () {
-              return !!document.querySelector(
-                "[data-external],[data-external-replace]"
-              );
-            },
-          },
-          { src: "//cdn.jsdelivr.net/npm/reveal-plantuml" },
-        ],
+        dependencies: [{ src: "//cdn.jsdelivr.net/npm/reveal-plantuml" }],
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -53,6 +44,7 @@
           RevealZoom,
           RevealMenu,
           PdfExport,
+          RevealImport,
         ],
       });
     </script>
